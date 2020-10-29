@@ -68,7 +68,7 @@ body {
   text-decoration: none;
   text-align: center;
 
-  background-color: transparent;
+  background-color: $clr-accent;
   border: none;
 }
 
@@ -78,7 +78,7 @@ body {
 .button:focus {
   color: $clr-light;
 
-  background-color: $clr-accent-light;
+  background-color: $clr-light;
 }
 
 .button:active {
@@ -87,7 +87,7 @@ body {
 
 .button--light:hover,
 .button--light:focus {
-  color: $clr-accent-light;
+  color: $clr-light;
 
   background-color: $clr-light;
 }
