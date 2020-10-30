@@ -1,21 +1,28 @@
 // ШРИФТЫ 
 
 :root {
+    --fs-body: 0.875rem;  
     --fs-h2: 2.25rem;
     --fs-h3: 1.5rem;
-    --fs-nav: 1.125rem;
-    --fs-body: 0.875rem;
+    --fs-nav: 1.25rem;
     --fs-big-text: 0.875rem;
     --fs-small-text: 0.750rem;
 }
 
 @media (min-width: $width-tbl) {
     :root {
+        --fs-body: 1rem;
         --fs-h2: 3.75rem;
         --fs-h3: 2.25rem;
-        --fs-body: 1rem;
+        --fs-nav: 1.125rem;
         --fs-big-text: 1.25rem;
         --fs-small-text: 0.875rem;
+    }
+}
+
+@media (min-width: $width-dsk) {
+    :root {
+        --fs-nav: 1.25rem;
     }
 }
 
@@ -66,6 +73,7 @@ body {
   font-weight: $fw-reg;
   color: $clr-light;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
 
   background-color: $clr-accent;
