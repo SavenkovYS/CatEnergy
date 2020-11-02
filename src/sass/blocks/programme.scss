@@ -1,0 +1,227 @@
+.programme {
+    padding-top: 20px;
+
+    &__item {
+        position: relative;
+
+        margin-bottom: 20px;
+        padding: 35px 20px 20px;
+
+        background-color: #f2f2f2;
+    }
+
+    &__item:last-child {
+        margin: 0;
+    }
+
+    &__item::before {
+        content: '';
+
+        position: absolute;
+        top: 25px;
+        left: 20px;
+
+        width: 50px;
+        height: 50px;
+
+        background-color: $clr-accent;
+        border-radius: 50%;
+    }
+
+    &__item--slim::after,
+    &__item--pro::after {
+        content: '';
+
+        position: absolute;
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__item--slim::after {  
+        top: 23px;
+        left: 20px;
+
+        width: 50px;
+        height: 50px;
+
+        background-image: url(../img/programme-icon-slim.svg);   
+    }
+
+    &__item--pro::after {
+        top: 35px;
+        left: 10px;
+
+        width: 70px;
+        height: 30px;
+
+        background-image: url(../img/programme-icon-pro.svg);
+    }
+
+    &__title {
+        margin-bottom: 35px;
+        padding-left: 70px;
+
+        font-size: var(--fs-h3);
+        color: $clr-dark;
+        font-weight: $fw-reg;
+        text-transform: uppercase;
+    } 
+
+    &__text {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
+        font-family: $ff-secondary;
+
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    &__link {
+        position: relative;
+
+        font-size: var(--fs-big-text);
+        color: $clr-dark;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__link::before {
+        content: '';
+
+        position: absolute;
+        top: 10px;
+        right: -32px;
+
+        width: 17px;
+        height: 2px;
+
+        background-color: $clr-dark;
+    }
+
+    &__link::after {
+        content: '';
+
+        position: absolute;
+        top: 6px;
+        right: -46px;
+
+        width: 11px;
+        height: 10px;
+
+        border-left: 7px solid $clr-dark;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 7px solid transparent;
+    }
+}
+
+@media(min-width: $width-tbl) {
+    .programme {
+        padding-top: 0;
+    
+        &__item {
+            margin-bottom: 30px;
+            padding: 70px 285px 60px 50px;
+        }
+    
+        &__item::before {
+            top: 90px;
+            left: auto;
+            right: 60px;
+    
+            width: 200px;
+            height: 200px;
+        }
+    
+        &__item--slim::after {  
+            top: 76px;
+            left: auto;
+            right: 95px;
+    
+            width: 140px;
+            height: 200px; 
+        }
+    
+        &__item--pro::after {
+            top: 128px;
+            left: auto;
+            right: 28px;
+    
+            width: 270px;
+            height: 115px;
+        }
+    
+        &__title {
+            margin-bottom: 20px;
+            padding-left: 0;
+        } 
+    
+        &__text {
+            margin-bottom: 55px;
+            padding-bottom: 0;
+    
+            border-bottom: none;
+        }
+
+        &__link::before {
+            top: 14px;
+            right: -40px;
+        }
+    
+        &__link::after {
+            top: 10px;
+            right: -54px;
+        }
+    }
+}
+
+@media(min-width: $width-dsk) {
+    .programme {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 80px;
+    
+        &__item {
+            margin-bottom: 0;
+            padding: 70px 50px 60px;
+        }
+
+        &__item::before {
+            top: 45px;
+            left: 50px;
+            right: auto;
+
+            width: 100px;
+            height: 100px;
+        }
+
+        &__item--slim::after {  
+            top: 35px;
+            left: 60px;
+            right: auto;
+
+            width: 70px;
+            height: 100px;
+        }
+
+        &__item--pro::after {
+            top: 65px;
+            left: 32px;
+            right: auto;
+
+            width: 135px;
+            height: 60px;
+        }
+        
+        &__title {
+            margin-bottom: 75px;
+            padding-left: 165px;
+        } 
+
+        &__text {
+            margin-bottom: 35px;
+        }    
+    }
+}
