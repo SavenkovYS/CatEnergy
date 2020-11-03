@@ -1,0 +1,121 @@
+.example {
+    padding-top: 70px;
+
+    background-color: $bg-clr-light;
+
+    &__title {
+        margin-bottom: 30px;
+
+        font-size: var(--fs-h2);
+        color: $clr-dark;
+        font-weight: $fw-reg;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        position: relative;
+
+        display: flex;
+        flex-direction: column-reverse;
+
+        width: 50%;
+        margin-bottom: 20px;
+
+        text-align: center;
+    }
+
+    &__item-title {
+        width: min-content;
+        margin: 0 auto;
+        margin-top: -13px;
+        padding: 0 15px;
+        z-index: 100;
+
+        font-family: $ff-secondary;
+        line-height: 1;
+        text-transform: lowercase;
+
+        background-color: $bg-clr-light;
+    }
+
+    &__item-value {
+        width: 80%;
+        max-width: 150px;
+        margin: 0 auto;
+        padding: 18px 20px;
+
+        font-size: 1.5rem;
+        color: $clr-dark;
+        text-transform: uppercase;
+        font-weight: $fw-reg;
+
+
+        border: 1px solid $br-clr-primary;
+        border-radius: 3px;
+    }
+
+    &__expenses {
+        width: 100%;
+
+        font-size: var(--fs-big-text);
+        color: $clr-dark;
+        font-weight: $fw-reg;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__comparison {
+        padding-top: 40px;
+    }
+
+    &__comparison-image {
+        margin: 0 auto;
+    } 
+
+    &__comparison-image-wrapper--after {
+        display: none;
+    }
+
+    &__toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__toggle-mobile {
+        width: 100px;
+        height: 14px;
+        padding: 3px 5px;
+
+        background-color: #fff;
+        border: 1px solid $br-clr-primary;
+        border-radius: 8px;
+    }
+
+    &__toggle-slider-mobile {
+        width: 50%;
+        height: 6px;
+        
+
+        background-color: $clr-accent;
+        border-radius: 8px;
+    }
+
+    &__toggle-desktop {
+        display: none;
+    }
+
+    &__toggle-button {
+        background-color: transparent;
+        border: none;
+    }
+}

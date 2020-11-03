@@ -114,47 +114,43 @@
           <div class="example__column">
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
               Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-            <div class="example__results results">
-              <ul class="results__list">
-                <li class="results__item">
-                  <div class="results__wrapper">
-                    <strong class="results__value">5 кг</strong>
-                    <p class="results__title">Снижение веса</p>
-                  </div>
-                </li>
-                <li class="results__item">
-                  <div class="results__wrapper">
-                    <strong class="results__value">60 дней</strong>
-                    <p class="results__title">Затрачено времени</p>
-                  </div>
-                </li>
-              </ul>
-              <p class="results__expenses">Затраты на питание:<span> 15&nbsp;000&nbsp;руб.</span></p>
-            </div>
+            <ul class="example__list">
+              <li class="example__item">
+                <p class="example__item-title">Снижение веса</p>
+                <strong class="example__item-value">5 кг</strong>
+              </li>
+              <li class="example__item">
+                <p class="example__item-title">Затрачено времени</p>
+                <strong class="example__item-value">60 дней</strong>
+              </li>
+              <li class="example__expenses">
+                <p class="example__expenses-text">Затраты на питание:<span> 15&nbsp;000&nbsp;руб.</span></p>
+              </li>
+            </ul>
           </div>
-          <div class="example__before-after before-after before-after--before">
-            <div class="before-after__images">
-              <div class="before-after__image-wrapper before-after__image-wrapper--before">
+          <div class="example__comparison">
+            <div class="example__comparison-images">
+              <div class="example__comparison-image-wrapper example__comparison-image-wrapper--before">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-                  <img class="before-after__image before-after__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Было">
+                  <img class="example__comparison-image example__comparison-image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Было">
                 </picture>
               </div>
-              <div class="before-after__image-wrapper before-after__image-wrapper--after">
+              <div class="example__comparison-image-wrapper example__comparison-image-wrapper--after">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
-                  <img class="before-after__image before-after__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стало">
+                  <img class="example__comparison-image example__comparison-image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стало">
                 </picture>
               </div>
             </div>
-            <div class="before-after__toggle toggle">
-              <button class="toggle__button toggle__button--before" type="button">Было</button>
-              <div class="toggle__mobile">
-                <div class="toggle__slider">
+            <div class="example__toggle">
+              <button class="example__toggle-button example__toggle-button--before" type="button">Было</button>
+              <div class="example__toggle-mobile">
+                <div class="example__toggle-slider-mobile">
                 </div>
               </div>
-              <input class="toggle__desktop" type="range" name="toggle__desktop" id="toggle__desktop">
-              <button class="toggle__button toggle__button--after" type="button">Стало</button>
+              <input class="example__toggle-desktop" type="range" name="toggle-desktop" id="toggle-desktop">
+              <button class="example__toggle-button example__toggle-button--after" type="button">Стало</button>
             </div>
           </div>
         </div>
