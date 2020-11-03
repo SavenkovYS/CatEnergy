@@ -7,11 +7,11 @@
         margin-bottom: 20px;
         padding: 35px 20px 20px;
 
-        background-color: #f2f2f2;
+        background-color: $bg-clr-light;
     }
 
     &__item:last-child {
-        margin: 0;
+        margin-bottom: 0;
     }
 
     &__item::before {
@@ -178,12 +178,15 @@
 
 @media(min-width: $width-dsk) {
     .programme {
-        display: flex;
-        justify-content: space-between;
-
         padding-top: 80px;
-    
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+        
         &__item {
+            width: 47%;
             margin-bottom: 0;
             padding: 70px 50px 60px;
         }

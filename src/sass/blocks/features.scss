@@ -1,0 +1,130 @@
+.features {
+    padding-top: 30px;
+
+    &__title {
+        margin-bottom: 30px;
+
+        font-size: var(--fs-h2);
+        color: $clr-dark;
+    }
+
+    &__number {
+        display: none;
+    }
+
+    &__item {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 20px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__item::before {
+        content: '';
+
+        display: inline-block;
+
+        min-width: 60px;
+        height: 60px;
+        margin-right: 20px;
+
+        background-color: $clr-accent;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__item--nutrients::before {
+        background-image: url(../img/advantage-leaf@1x.png);
+    }
+
+    &__item--powder::before {
+        background-image: url(../img/advantage-powder@1x.png);
+    }
+
+    &__item--meal::before {
+        background-image: url(../img/advantage-dining@1x.png);
+    }
+
+    &__item--change::before {
+        background-image: url(../img/advantage-clock@1x.png);
+    }
+}
+
+@media(min-width: $width-tbl) {
+    .features {
+        padding-top: 45px;
+    
+        &__title {
+            margin-bottom: 60px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+
+            max-width: 1000px;
+        }
+    
+        &__item { 
+            flex-direction: column;
+            align-items: flex-start;
+            
+            width: 33%;
+            margin-bottom: 70px;
+            margin-right: 150px;
+            padding-bottom: 65px;
+        }
+
+        &__item:nth-child(even) {
+            margin-right: 0;
+        }
+    
+        &__item:nth-last-child(2),
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+    
+        &__item::before {
+            min-width: 80px;
+            height: 80px;
+            margin-right: 0;
+            margin-bottom: 35px;
+        }
+
+        &__number {
+            display: inline-block;
+
+            position: absolute;
+            top: -40px;
+            right: 0;
+            z-index: -100;
+
+            font-size: 280px;
+            line-height: 1;
+            color: $bg-clr-light;    
+        }
+    }
+}
+
+@media(min-width: $width-dsk) {
+    .features {
+        padding-top: 65px;
+
+        &__list {
+            max-width: none;
+            justify-content: space-between;
+        }
+    
+        &__item {            
+            width: 20%;
+            margin-bottom: 0;
+            margin-right: 0;
+        }
+    }
+}
