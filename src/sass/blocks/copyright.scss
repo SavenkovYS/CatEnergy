@@ -1,0 +1,18 @@
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+        padding-bottom: 8px;
+    }
+}
+
+@media(min-width: $width-tbl) {
+    .copyright {
+
+        &__text {
+            margin-right: 25px;
+        }
+    }
+}

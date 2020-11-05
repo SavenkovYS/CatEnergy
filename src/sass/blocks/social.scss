@@ -1,0 +1,27 @@
+.social {
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    &__item + &__item {
+        margin-left: 40px;
+    }
+
+    &__link {
+        display: flex;
+    }
+}
+
+@media(min-width: $width-tbl) {
+    .social {
+
+        &__item + &__item {
+            margin-left: 30px;
+        }
+    }
+}
