@@ -1,11 +1,11 @@
 @media(min-width: $width-dsk) {
-    .page-header {
+    .page-header--index {
         position: relative;
 
         color: $clr-light;
     }
 
-    .page-header::before {
+    .page-header--index::before {
         content: '';
 
         position: absolute;
