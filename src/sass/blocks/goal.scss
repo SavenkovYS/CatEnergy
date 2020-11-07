@@ -1,0 +1,31 @@
+.goal {
+    border: 0;
+
+    &__item {
+        margin-bottom: 25px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__label {
+        position: relative;
+
+        padding-left: 45px;
+
+        font-size: var(--fs-body-big);
+        color: $clr-dark;
+        text-transform: uppercase;
+    }
+
+    &__label::before {
+        top: -2px;
+        left: 0;
+    }
+
+    &__label::after {
+        top: 7px;
+        left: 9px;
+    }
+}

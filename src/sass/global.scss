@@ -1,7 +1,8 @@
 // ШРИФТЫ 
 
 :root {
-    --fs-body: 0.875rem;  
+    --fs-body: 0.875rem;
+    --fs-body-big: 1rem;  
     --fs-h2: 2.25rem;
     --fs-h3: 1.5rem;
     --fs-nav: 1.25rem;
@@ -12,6 +13,7 @@
 @media (min-width: $width-tbl) {
     :root {
         --fs-body: 1rem;
+        --fs-body-big: 1.25rem;  
         --fs-h2: 3.75rem;
         --fs-h3: 2.25rem;
         --fs-nav: 1.125rem;
@@ -123,6 +125,7 @@ input[type="email"] {
 
   font-size: 1.25rem;
   color: $clr-text;
+  text-transform: uppercase;
 
   background-color: transparent;
   border: 1px solid $br-clr-secondary;
@@ -150,47 +153,9 @@ input[type="email"]:active {
 
 // Чекбоксы
 
-input[type="checkbox"] + label::before {
-  content: '';
 
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 35px;
-  height: 35px;
-
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  cursor: pointer;
-}
-
-input:checked + label::after {
-  content: '';
-
-  position: absolute;
-  top: 9px;
-  left: 7px;
-
-  width: 21px;
-  height: 10px;
-
-  border: 2px solid $br-clr-primary;
-  border-top: none;
-  border-right: none;
-  transform: rotate(-45deg);
-}
 
 // Состояния чекбоксов
-
-input[type="checkbox"]:hover + label::before {
-  border: 2px solid #283645;
-}
-
-input[type="checkbox"]:focus + label::before,
-input[type="checkbox"]:active + label::before {
-  border: 2px solid #d22856;
-}
 
 // Радиокнопки
 
@@ -198,41 +163,41 @@ input[type="radio"] + label::before {
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 0;
 
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
 
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  border: 1px solid $br-clr-primary;
   border-radius: 50%;
-  cursor: pointer;
 }
 
 input[type="radio"]:checked + label::after {
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: 10px;
 
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
 
-  background-color: $clr-light;
+  background-color: $clr-accent;
   border-radius: 50%;
 }
 
 // Состояния радиокнопок
 
-input[type="radio"]:hover + label::before {
-  border: 2px solid $clr-dark;
+input[type="radio"] + label:hover::before,
+input[type="radio"] + label:focus::before {
+  border-color: rgba(186, 186, 186, 1);
 }
 
-input[type="radio"]:focus + label::before,
-input[type="radio"]:active + label::before {
-  border: 2px solid $clr-light;
+input[type="radio"] + label:active::before {
+  border-color: rgba(186, 186, 186, 0.3);
+}
+
+input[type="radio"]:checked + label:active::after {
+  background-color: rgba(104, 183, 56, 0.3);
 }
 
 // Placeholders

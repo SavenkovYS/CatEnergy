@@ -1,0 +1,10 @@
+.user-contacts {
+    border: 0;
+
+    &__title {
+        position: relative;
+
+        font-size: var(--fs-h3);
+        color: $clr-dark;
+    }
+}

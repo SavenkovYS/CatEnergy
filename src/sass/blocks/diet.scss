@@ -1,0 +1,26 @@
+.diet {
+    padding-top: 20px;
+
+    &__title {
+        margin-bottom: 25px;
+        padding: 0 20px;
+
+        font-size: var(--fs-h2);
+        color: $clr-dark;
+        font-weight: $fw-reg;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+        padding: 0 20px;
+
+        color: $clr-dark;
+        text-transform: uppercase;
+    }
+
+    &__form-item {
+        padding: 25px 20px;
+
+        border-bottom: 1px solid $br-clr-primary;
+    }
+}
