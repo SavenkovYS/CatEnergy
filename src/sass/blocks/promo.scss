@@ -1,0 +1,90 @@
+.promo {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+        width: 100%;
+        min-height: 290px;
+        padding: 60px 50px;
+
+        color: $clr-light;
+        text-align: center;
+
+        background-color: $clr-accent;
+        background-image: url(../img/gift-photo-mobile@1x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+
+    &__container::before {
+        content: '';
+
+        display: block;
+
+        width: 60px;
+        height: 60px;
+
+        background-image: url(../img/gift-icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__text {
+        width: 50%;
+        font-family: $ff-secondary;
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: $width-tbl) {
+    .promo {
+
+        &__container { 
+            flex-direction: row;
+            justify-content: center;
+    
+            min-height: 200px;
+            padding: 60px 90px;
+    
+            text-align: left;
+    
+            background-image: url(../img/gift-photo-tablet@1x.jpg);
+        }
+    
+        &__text {
+            width: 30%;
+            margin-left: 270px;
+        }
+    }
+}
+
+@media(min-width: $width-dsk) {
+    .promo {
+        width: 245px;
+
+        &__container { 
+            flex-direction: column;
+            justify-content: space-between;
+    
+            min-height: 290px;
+            height: 100%;
+            padding: 60px 40px 45px;
+    
+            text-align: center;
+    
+            background-image: url(../img/gift-photo-desktop@1x.jpg);
+        }
+    
+        &__text {
+            width: auto;
+            margin-left: 0;
+        }
+    }
+}
