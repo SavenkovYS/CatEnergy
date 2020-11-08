@@ -120,10 +120,11 @@ body {
 
 input[type="text"],
 input[type="tel"],
-input[type="email"] {
-  padding: 18px 20px;
+input[type="email"],
+textarea {
+  padding: 15px 20px 12px;
 
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: $clr-text;
   text-transform: uppercase;
 
@@ -153,9 +154,46 @@ input[type="email"]:active {
 
 // Чекбоксы
 
+input[type="checkbox"] + label::before {
+  content: "";
 
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+
+  border: 1px solid #cdcdcd;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 12px;
+  box-sizing: border-box;
+
+  border-left: 1px solid #68b738;
+  border-bottom: 1px solid #68b738;
+  transform: rotate(-45deg);
+}
 
 // Состояния чекбоксов
+
+input[type="checkbox"] + label:hover::before,
+input[type="checkbox"] + label:focus::before {
+  border-color: rgba(186, 186, 186, 1);
+}
+
+input[type="checkbox"] + label:active::before {
+  border-color: rgba(186, 186, 186, 0.3);
+}
+
+input[type="checkbox"]:checked + label:active::after {
+  border-color: rgba(104, 183, 56, 0.3);
+}
 
 // Радиокнопки
 
