@@ -46,3 +46,60 @@
         font-family: $ff-secondary;
     }
 }
+
+@media(min-width: $width-tbl) {
+    .diet {
+    
+        &__title {
+            margin-bottom: 50px;
+            padding: 0 30px;
+        }
+    
+        &__text {
+            margin-bottom: 65px;
+            padding: 0 70px;
+        }
+
+        &__form {
+            padding: 0 70px;
+        }
+    
+        &__form-item {
+            padding: 0;
+    
+            border-bottom: none;
+        }
+
+        &__cat-name {
+            margin-bottom: 70px;
+        }
+
+        &__goal {
+            margin-bottom: 75px;
+        }
+
+        &__user-contacts {
+            margin-bottom: 70px;
+        }
+
+        &__comment {
+            margin-bottom: 70px;
+        }
+
+        &__products {
+            margin-bottom: 55px;
+        }
+    
+        &__bottom {
+            flex-direction: row;
+            justify-content: space-between;
+    
+            padding: 0;
+        }
+    
+        &__button {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+}

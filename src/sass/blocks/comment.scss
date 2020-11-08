@@ -35,3 +35,37 @@
         height: 150px;
     }
 }
+
+@media(min-width: $width-tbl) {
+    .comment {
+    
+        &__title {
+            margin-bottom: 70px;
+            margin-left: -40px;
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        &__title::before,
+        &__title::after {
+            content: '';
+    
+            position: absolute;
+            top: calc(1em / 2 + 3px);
+            z-index: -100;
+    
+            width: 100vw;
+            height: 3px;
+    
+            background-color: $clr-accent;
+        }
+
+        &__title::before {
+            left:  -60px;
+        }
+    
+        &__field {
+            height: 175px;
+        }
+    }
+}

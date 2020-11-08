@@ -66,3 +66,41 @@
         right: 12px;
     }
 }
+
+@media(min-width: $width-tbl) {
+    .user-contacts {
+    
+        &__title {
+            margin-bottom: 70px;
+            padding-right: 40px;
+            padding-left: 40px;
+            margin-left: -40px;
+        }
+        
+        &__title::before,
+        &__title::after {
+            content: '';
+    
+            position: absolute;
+            top: calc(1em / 2 + 3px);
+            z-index: -100;
+    
+            width: 100vw;
+            height: 3px;
+    
+            background-color: $clr-accent;
+        }
+
+        &__title::before {
+            left:  -60px;
+        }
+    
+        &__item {
+            margin-bottom: 20px;
+        }
+    
+        &__field {
+            margin-left: 20px;
+        }
+    }
+}

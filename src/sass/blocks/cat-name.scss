@@ -24,3 +24,31 @@
         flex-grow: 1;
     }
 }
+
+@media(min-width: $width-tbl) {
+    .cat-name {
+    
+        &__item {
+            display: flex;
+            align-items: center;
+    
+            margin-bottom: 15px;
+        }
+    
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+    
+        &__label {
+            margin-right: 15px;
+    
+            color: $clr-dark;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    
+        &__field {
+            flex-grow: 1;
+        }
+    }
+}

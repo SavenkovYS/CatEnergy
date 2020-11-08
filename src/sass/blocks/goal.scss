@@ -29,3 +29,27 @@
         left: 9px;
     }
 }
+
+@media(min-width: $width-tbl) {
+    .goal {
+        padding: 35px 25px;
+
+        border: 1px solid $br-clr-primary;
+    
+        &__item {
+            margin-bottom: 30px;
+        }
+    
+        &__label {
+            padding-left: 65px;
+        }
+    
+        &__label::before {
+            top: -4px;
+        }
+    
+        &__label::after {
+            left: 11px;
+        }
+    }
+}

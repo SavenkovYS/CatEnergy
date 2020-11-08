@@ -180,6 +180,13 @@ input[type="checkbox"]:checked + label::after {
   transform: rotate(-45deg);
 }
 
+@media(min-width: $width-tbl) {
+  input[type="checkbox"] + label::before {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 // Состояния чекбоксов
 
 input[type="checkbox"] + label:hover::before,
@@ -221,6 +228,18 @@ input[type="radio"]:checked + label::after {
 
   background-color: $clr-accent;
   border-radius: 50%;
+}
+
+@media(min-width: $width-tbl) {
+  input[type="radio"] + label::before {
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type="radio"]:checked + label::after {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 // Состояния радиокнопок
