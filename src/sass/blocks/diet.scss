@@ -1,15 +1,6 @@
 .diet {
     padding-top: 20px;
 
-    &__title {
-        margin-bottom: 25px;
-        padding: 0 20px;
-
-        font-size: var(--fs-h2);
-        color: $clr-dark;
-        font-weight: $fw-reg;
-    }
-
     &__text {
         margin-bottom: 10px;
         padding: 0 20px;
@@ -126,20 +117,22 @@
         }
 
         &__form-item--cat-name {
+            display: flex;
+            flex-direction: column;
+
             width: calc(50% - 40px);
             margin-right: 40px;
-            height: 100%;
         }
 
         &__cat-name {
             display: flex;
-            justify-content: space-between;
             height: 100%;
         }
 
         &__form-item--goal {
             width: calc(50% - 40px);
             margin-left: 40px;
+            margin-bottom: 70px;
         }
 
         &__form-item--user-contacts {

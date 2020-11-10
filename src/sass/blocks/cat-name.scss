@@ -25,8 +25,15 @@
     }
 }
 
-@media(min-width: $width-tbl) {
+@media(min-width: $width-dsk) {
     .cat-name {
+
+        &__list {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     
         &__item {
             display: flex;
