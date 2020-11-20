@@ -15,6 +15,15 @@
     &__link {
         display: flex;
     }
+
+    &__link:hover svg path {
+        fill: $clr-accent;
+    }
+
+    &__link:focus svg path,
+    &__link:active svg path {
+        fill: rgba($clr-accent, 0.3);
+    }  
 }
 
 @media(min-width: $width-tbl) {

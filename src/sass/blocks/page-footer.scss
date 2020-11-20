@@ -9,6 +9,19 @@
         margin-bottom: 30px;
     }
 
+    // Состояния лого
+
+    &__logo-text:hover,
+    &__logo-text:focus {
+        opacity: 0.8;
+    }
+
+    &__logo-text:active {
+        opacity: 0.6;
+    }
+
+    // / Состояния лого
+
     &__social {
         width: 100%;
         margin-bottom: 20px;

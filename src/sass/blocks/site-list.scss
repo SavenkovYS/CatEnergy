@@ -7,7 +7,7 @@
     &__link {
         display: block;
 
-        padding: 20px;
+        padding: 25px;
 
         font-size: var(--fs-nav);
         color: $clr-dark;
@@ -15,6 +15,18 @@
         text-transform: uppercase;
         font-weight: $fw-med;
         text-align: center;
+        line-height: 1;
+    }
+
+    // Состояния ссылок меню
+
+    &__link[href]:hover,
+    &__link[href]:focus {
+        color: rgba($clr-dark, 0.6);
+    }
+
+    &__link[href]:active {
+        color: rgba($clr-dark, 0.3);
     }
 }
 
@@ -32,7 +44,7 @@
         }
 
         &__link {
-            padding: 5px 0;
+            padding: 9px 0;
 
             font-weight: $fw-reg;
         }
@@ -48,10 +60,6 @@
 
         &__link {
             color: inherit;
-        }
-
-        &__link--active {
-            border-bottom: 2px solid $clr-light;
         }
     }
 }

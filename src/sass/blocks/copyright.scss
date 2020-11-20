@@ -1,10 +1,26 @@
 .copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        text-decoration: none;
+        color: $clr-text;
+    }
+
+    &__link:hover svg path {
+        fill: $clr-accent; 
+    }
+
+    &__link:focus,
+    &__link:active {
+        opacity: 0.3;
+    }
 
     &__text {
-        padding-bottom: 8px;
+        font-family: $ff-secondary;
+        font-size: 1rem;
     }
 }
 
