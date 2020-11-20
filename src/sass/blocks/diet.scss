@@ -1,4 +1,5 @@
 .diet {
+    overflow: hidden;
 
     &__text {
         width: 240px;
@@ -41,14 +42,10 @@
 @media(min-width: $width-tbl) {
     .diet {
     
-        &__title {
-            margin-bottom: 50px;
-            padding: 0 30px;
-        }
-    
         &__text {
+            width: 350px;
+            margin: 0 70px;
             margin-bottom: 65px;
-            padding: 0 70px;
         }
 
         &__form {
@@ -83,24 +80,32 @@
     
         &__bottom {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
     
             padding: 0;
         }
+
+        &__button-container {
+            width: 50%;
+        }
     
         &__button {
-            width: 50%;
+            width: 80%;
+            min-width: 285px;
+            max-width: 400px;
             margin-bottom: 0;
+            
+        }
+
+        &__legend {
+            width: 50%;
+            
         }
     }
 }
 
 @media(min-width: $width-dsk) {
     .diet {
-    
-        &__title {
-            padding: 0 110px;
-        }
     
         &__text {
             padding: 0 110px;

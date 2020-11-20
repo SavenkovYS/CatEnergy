@@ -16,6 +16,10 @@
         display: flex;
     }
 
+    &__link svg path {
+        fill: #666666;
+    }
+
     &__link:hover svg path {
         fill: $clr-accent;
     }
@@ -31,6 +35,21 @@
 
         &__item + &__item {
             margin-left: 30px;
+        }
+
+        &__link--vk svg {
+            width: 30px;
+            height: 16px;
+        }
+
+        &__link--instagram svg {
+            width: 23px;
+            height: 23px;
+        }
+
+        &__link--facebook svg {
+            width: 14px;
+            height: 28px;
         }
     }
 }
