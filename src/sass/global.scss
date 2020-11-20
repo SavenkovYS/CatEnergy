@@ -67,10 +67,10 @@ body {
 .button {
   display: block;
 
-  padding: 15px 25px;
+  padding: 13px 25px;
   
   font-family: $ff-primary;
-  font-size: var(--fs-big-text);
+  font-size: 1rem;
   line-height: 1;
   font-weight: $fw-reg;
   color: $clr-light;
@@ -80,6 +80,12 @@ body {
 
   background-color: $clr-accent;
   border: none;
+}
+
+.button--secondary {
+  color: $clr-text;
+
+  background-color: $bg-clr-light;
 }
 
 // Состояния кнопок 
@@ -93,24 +99,14 @@ body {
   color: rgba($clr-light, 0.3);
 }
 
-.button--light:hover,
-.button--light:focus {
-  color: $clr-light;
-
-  background-color: $clr-light;
+.button--secondary:hover,
+.button--secondary:focus {
+  background-color: #ebebeb;
 }
 
-.button--light:active {
-  color: rgba(210, 40, 86, 0.3);
+.button--secondary:active {
+  color: rgba($clr-text, 0.3);
 }
-
-.button--disabled:hover,
-.button--disabled:focus {
-  color: rgba(40, 54, 69, 0.3);
-  
-  border: 3px solid rgba(40, 54, 69, 0.3);
-  background-color: transparent;
-} 
 
 // =========Поля формы==========
 

@@ -3,7 +3,7 @@
     &__container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
         position: relative;
@@ -38,6 +38,8 @@
 
     &__text {
         width: 50%;
+        margin-top: 60px;
+
         font-family: $ff-secondary;
         font-size: 1rem;
     }
@@ -48,7 +50,6 @@
 
         &__container { 
             flex-direction: row;
-            justify-content: center;
     
             min-height: 200px;
             padding: 60px 90px;
@@ -60,6 +61,7 @@
     
         &__text {
             width: 30%;
+            margin-top: 0;
             margin-left: 270px;
         }
     }
@@ -71,7 +73,6 @@
 
         &__container { 
             flex-direction: column;
-            justify-content: space-between;
     
             min-height: 290px;
             height: 100%;
@@ -84,6 +85,7 @@
     
         &__text {
             width: auto;
+            margin-top: 60px;
             margin-left: 0;
         }
     }
