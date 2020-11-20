@@ -119,3 +119,13 @@
         }
     }
 }
+
+@media(min-width: $width-dsk) {
+    .products {
+
+        &__item {
+            width: 25%;
+            margin-bottom: 0;
+        }
+    }
+}

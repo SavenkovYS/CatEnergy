@@ -29,6 +29,10 @@
         padding: 10px 20px 0;
     }
 
+    &__button-container {
+        width: 100%;
+    }
+
     &__button {
         width: 100%;
         margin-bottom: 25px;
@@ -43,7 +47,7 @@
     .diet {
     
         &__text {
-            width: 350px;
+            width: 300px;
             margin: 0 70px;
             margin-bottom: 65px;
         }
@@ -90,7 +94,7 @@
         }
     
         &__button {
-            width: 80%;
+            width: calc(100% - 60px);
             min-width: 285px;
             max-width: 400px;
             margin-bottom: 0;
@@ -108,7 +112,8 @@
     .diet {
     
         &__text {
-            padding: 0 110px;
+            margin: 0 110px;
+            margin-bottom: 65px;
         }
 
         &__form {
@@ -122,15 +127,11 @@
         }
 
         &__form-item--cat-name {
-            display: flex;
-            flex-direction: column;
-
             width: calc(50% - 40px);
             margin-right: 40px;
         }
 
         &__cat-name {
-            display: flex;
             height: 100%;
         }
 
@@ -153,15 +154,12 @@
         }
     
         &__bottom {
-            flex-direction: row;
-            justify-content: space-between;
-    
-            padding: 0;
+            padding-bottom: 80px;
         }
     
         &__button {
-            width: 50%;
-            margin-bottom: 0;
+            width: calc(100% - 80px);
+            max-width: none;
         }
     }
 }
