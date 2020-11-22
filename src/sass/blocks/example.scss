@@ -1,6 +1,5 @@
 .example {
-    padding-top: 70px;
-    padding-bottom: 35px;
+    padding: 25px 20px 40px;
 
     background-color: $bg-clr-light;
 
@@ -13,7 +12,9 @@
     }
 
     &__text {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+
+        font-family: $ff-secondary;
     }
 
     &__list {
@@ -53,7 +54,7 @@
         width: 80%;
         max-width: 150px;
         margin: 0 auto;
-        padding: 18px 20px;
+        padding: 10px 20px 18px;
 
         font-size: 1.5rem;
         color: $clr-dark;
@@ -79,10 +80,6 @@
         padding-top: 40px;
     }
 
-    &__comparison-container {
-        margin-bottom: 30px;
-    }
-
     &__comparison-image {
         margin: 0 auto;
     } 
@@ -95,6 +92,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        margin-top: 25px;
     }
 
     &__toggle-mobile {
@@ -106,15 +105,15 @@
         background-color: #fff;
         border: 1px solid $br-clr-primary;
         border-radius: 8px;
+        cursor: pointer;
     }
 
     &__toggle-slider-mobile {
         width: 50%;
         height: 6px;
         
-
         background-color: $clr-accent;
-        border-radius: 8px;
+        border-radius: 8px;    
     }
 
     &__toggle-desktop {
@@ -129,13 +128,32 @@
 
         background-color: transparent;
         border: none;
+        cursor: pointer;
     }
 }   
 
+// Переключение примера до/после
+
+@media(max-width: $width-tbl - 1px) {
+    .example {
+
+        &--after &__toggle-slider-mobile {
+            margin-left: auto;
+        }
+    
+        &--after &__comparison-image-wrapper--after {
+            display: block;
+        }
+    
+        &--after &__comparison-image-wrapper--before {
+            display: none;
+        }
+    }
+}
+
 @media(min-width: $width-tbl) {
     .example {
-        padding-top: 45px;
-        padding-bottom: 0;
+        padding: 45px 0 0;
     
         background-color: inherit;
     
@@ -188,7 +206,7 @@
         }
     
         &__comparison {
-            padding-top: 40px;
+            padding-top: 80px;
         }
     
         &__comparison-container {
@@ -207,13 +225,13 @@
         }
 
         &__comparison-image-wrapper--after {
-          background-image: linear-gradient(transparent, transparent 25%, #eaeaea 25%, #eaeaea);
-          clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+            background-image: linear-gradient(transparent, transparent 25%, #eaeaea 25%, #eaeaea);
+            clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
         }
 
         &__comparison-image-wrapper--before {
             background-image: linear-gradient(transparent, transparent 25%, $bg-clr-light 25%, $bg-clr-light);
-          clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+            clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
         }     
     
         &__toggle {
@@ -229,6 +247,8 @@
         &__toggle-mobile {
             display: none;
         }
+
+        // Стилизация скролла
     
         &__toggle-desktop {
             display: block;
@@ -264,7 +284,7 @@
             box-sizing: border-box;
             margin-top: -14px;
       
-            background-color: #68b738;
+            background-color: $clr-accent;
             border: 1px solid #dcdcdc;
             box-shadow: inset 0 0 0 12px #ffffff,
                         0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -279,7 +299,7 @@
           }
       
           &__toggle-desktop::-webkit-slider-thumb:active {
-            border: 2px solid #68b738;
+            border: 2px solid $clr-accent;
             box-shadow: inset 0 0 0 11px #ffffff,
                         0 4px 5px 0 rgba(0, 0, 0, 0.3);
           }
@@ -290,7 +310,7 @@
             box-sizing: border-box;
             margin-top: -14px;
       
-            background-color: #68b738;
+            background-color: $clr-accent;
             border: 1px solid #dcdcdc;
             box-shadow: inset 0 0 0 12px #ffffff,
                         0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -305,7 +325,7 @@
           }
       
           &__toggle-desktop::-moz-range-thumb:active {
-            border: 2px solid #68b738;
+            border: 2px solid $clr-accent;
             box-shadow: inset 0 0 0 11px #ffffff,
                         0 4px 5px 0 rgba(0, 0, 0, 0.3);
           }
@@ -316,7 +336,7 @@
             box-sizing: border-box;
             margin-top: -10px;
       
-            background-color: #68b738;
+            background-color: $clr-accent;
             border: 1px solid #dcdcdc;
             box-shadow: inset 0 0 0 12px #ffffff,
                         0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -331,7 +351,7 @@
           }
       
           &__toggle-desktop::-ms-thumb:active {
-            border: 2px solid #68b738;
+            border: 2px solid $clr-accent;
             box-shadow: inset 0 0 0 11px #ffffff,
                         0 4px 5px 0 rgba(0, 0, 0, 0.3);
           }
@@ -386,7 +406,7 @@
 
 @media(min-width: $width-dsk) {
     .example {
-        padding-top: 30px;
+        padding: 30px 110px 0;
 
         &__wrapper {
             display: flex;

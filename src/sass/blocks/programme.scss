@@ -1,5 +1,5 @@
 .programme {
-    padding-top: 20px;
+    padding: 20px 20px 0;
 
     &__item {
         position: relative;
@@ -80,23 +80,27 @@
     &__link {
         position: relative;
 
+        padding-right: 50px;
+
         font-size: var(--fs-big-text);
         color: $clr-dark;
         text-transform: uppercase;
         text-decoration: none;
     }
 
+    // Стрелки 
+
     &__link::before {
         content: '';
 
         position: absolute;
         top: 10px;
-        right: -32px;
+        right: 18px;
 
         width: 17px;
         height: 2px;
 
-        background-color: $clr-dark;
+        background-color: #3e4242;
     }
 
     &__link::after {
@@ -104,21 +108,38 @@
 
         position: absolute;
         top: 6px;
-        right: -46px;
+        right: 4px;
 
         width: 11px;
         height: 10px;
 
-        border-left: 7px solid $clr-dark;
+        border-left: 7px solid #3e4242;
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
         border-right: 7px solid transparent;
+    }
+
+    // Состояния стрелок
+
+    &__link:hover::before {
+        right: 9px;
+        width: 26px;
+    }
+
+    &__link:hover::after {
+        right: -5px;
+    }
+
+    &__link:active,
+    &__link:active::before,
+    &__link:active::after {
+        opacity: 0.3;
     }
 }
 
 @media(min-width: $width-tbl) {
     .programme {
-        padding-top: 0;
+        padding: 0 30px;
     
         &__item {
             margin-bottom: 30px;
@@ -160,25 +181,38 @@
         &__text {
             margin-bottom: 55px;
             padding-bottom: 0;
+            padding-right: 15px;
     
             border-bottom: none;
         }
 
+        // Стрелки
+
         &__link::before {
             top: 14px;
-            right: -40px;
+            right: 10px;
         }
     
         &__link::after {
             top: 10px;
-            right: -54px;
+            right: -4px;
+        }
+
+        // Состояния стрелок
+
+        &__link:hover::before {
+            right: 1px;
+        }
+
+        &__link:hover::after {
+            right: -13px;
         }
     }
 }
 
 @media(min-width: $width-dsk) {
     .programme {
-        padding-top: 80px;
+        padding: 80px 110px 0;
 
         &__list {
             display: flex;

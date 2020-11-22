@@ -1,7 +1,7 @@
 .intro-block {
     position: relative;
 
-    padding-top: 20px;
+    padding: 25px 20px 0;
 
     color: $clr-light;
     text-align: center;
@@ -24,6 +24,9 @@
     }
 
     &__title {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 20px;
 
         font-size: var(--fs-h2);
@@ -44,25 +47,27 @@
     }
 
     &__button {
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 auto;
     }
 }
 
 @media(min-width: $width-tbl) {
     .intro-block {
-        padding-top: 45px;
-        padding-bottom: 530px;
+        padding: 55px 30px 530px;
 
         color: $clr-dark;
         text-align: left;
 
         &__container {
             width: 500px;
-            margin: 0 auto;
+            margin-left: 90px;
         }
 
         &__title {
+            width: auto;
+            margin-left: 0;
+            margin-right: 0;
             margin-bottom: 35px;
         }
     
@@ -81,7 +86,7 @@
         }
     
         &__button {
-            width: max-content;
+            width: 245px;
             max-width: none;
             margin: 0;
         }
@@ -94,8 +99,7 @@
 
 @media(min-width: $width-dsk) {
     .intro-block {
-        padding-bottom: 170px;
-        padding-top: 80px;
+        padding: 80px 110px 170px;
 
         &__container {
             width: 600px;

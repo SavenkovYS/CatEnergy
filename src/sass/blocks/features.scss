@@ -1,5 +1,5 @@
 .features {
-    padding-top: 30px;
+    padding: 30px 20px 45px;
 
     &__title {
         margin-bottom: 30px;
@@ -55,11 +55,15 @@
     &__item--change::before {
         background-image: url(../img/advantage-clock@1x.png);
     }
+
+    &__text {
+        font-family: $ff-secondary;
+    }
 }
 
 @media(min-width: $width-tbl) {
     .features {
-        padding-top: 45px;
+        padding: 45px 30px 0;
     
         &__title {
             margin-bottom: 60px;
@@ -115,7 +119,7 @@
 
 @media(min-width: $width-dsk) {
     .features {
-        padding-top: 65px;
+        padding: 65px 110px 0;
 
         &__list {
             max-width: none;
