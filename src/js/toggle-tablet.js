@@ -1,14 +1,36 @@
 'use strict';
 
+
+const TABLET_WIDTH = 768;
+const docWidth = document.documentElement.clientWidth;
 const imgBefore = document.querySelector('.example__comparison-image-wrapper--before');
 const imgAfter = document.querySelector('.example__comparison-image-wrapper--after');
 const range = document.querySelector('.example__toggle-desktop');
+const btnBefore = document.querySelector('.example__toggle-button--before');
+const btnAfter = document.querySelector('.example__toggle-button--after');
+console.log(docWidth)
+if(docWidth >= TABLET_WIDTH) {
+    range.addEventListener('input', () => {
+        changeImageSize()
+    })
+    
+    btnBefore.addEventListener('click', () => {
+        range.value = 0;
+        changeImageSize()
+    })
+    
+    btnAfter.addEventListener('click', () => {
+        range.value = 100;
+        changeImageSize()
+    })
+    
+    function changeImageSize() {
+        imgBefore.style.clipPath = `polygon(0 0, ${100 - range.value}% 0, ${100 - range.value}% 100%, 0 100%)`;
+        imgAfter.style.clipPath = `polygon(${100 - range.value}% 0, 100% 0, 100% 100%, ${100 - range.value}% 100%)`;
+    }
+}
 
-range.addEventListener('input', () => {
-    imgBefore.style.clipPath = `polygon(0 0, ${range.value}% 0, ${range.value}% 100%, 0 100%)`;
-    imgAfter.style.clipPath = `polygon(${range.value}% 0, 100% 0, 100% 100%, ${range.value}% 100%)`;
-    console.log(range.value)
-})
+
 
 // (function () {
 

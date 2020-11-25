@@ -61,5 +61,9 @@
         &__link {
             color: inherit;
         }
+
+        &--index &__link--active {
+            border-bottom: 2px solid #fff;
+        }
     }
 }

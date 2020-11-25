@@ -60,15 +60,15 @@
                 <ul class="cat-name__list">
                   <li class="cat-name__item">
                     <label class="cat-name__label cat-name__label--name" for="cat-name-field">Имя:*</label>
-                    <input class="cat-name__field cat-name__field--name" type="text" name="cat-name" id="cat-name-field" placeholder="Барсик">
+                    <input class="cat-name__field cat-name__field--name text-input" type="text" name="cat-name" id="cat-name-field" placeholder="Барсик">
                   </li>
                   <li class="cat-name__item">
                     <label class="cat-name__label cat-name__label--weight" for="weight-field">Вес (кг):*</label>
-                    <input class="cat-name__field cat-name__field--weight" type="text" name="weight" id="weight-field" placeholder="7">
+                    <input class="cat-name__field cat-name__field--weight text-input" type="text" name="weight" id="weight-field" placeholder="7">
                   </li>
                   <li class="cat-name__item">
                     <label class="cat-name__label cat-name__label--age" for="age-field">Возраст (лет):</label>
-                    <input class="cat-name__field cat-name__field--age" type="text" name="age" id="age-field" placeholder="7">
+                    <input class="cat-name__field cat-name__field--age text-input" type="text" name="age" id="age-field" placeholder="7">
                   </li>
                 </ul>
               </fieldset>
@@ -80,15 +80,15 @@
               <fieldset class="diet__goal goal">
                 <ul class="goal__list">
                   <li class="goal__item">
-                    <input class="visually-hidden" type="radio" name="goal" id="slim" checked>
+                    <input class="visually-hidden radio-button" type="radio" name="goal" id="slim" checked>
                     <label class="goal__label" for="slim">Похудение</label>
                   </li>
                   <li class="goal__item">
-                    <input class="visually-hidden" type="radio" name="goal" id="pro">
+                    <input class="visually-hidden radio-button" type="radio" name="goal" id="pro">
                     <label class="goal__label" for="pro">Набор массы</label>
                   </li>
                   <li class="goal__item">
-                    <input class="visually-hidden" type="radio" name="goal" id="advice">
+                    <input class="visually-hidden radio-button" type="radio" name="goal" id="advice">
                     <label class="goal__label" for="advice">Не знаю (нужен ваш совет)</label>
                   </li>
                 </ul>
@@ -104,7 +104,7 @@
                   <li class="user-contacts__item">
                     <label class="user-contacts__label user-contacts__label--email" for="email-field">
                       <span>e-mail:*</span>
-                      <input class="user-contacts__field user-contacts__field--email" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+                      <input class="user-contacts__field user-contacts__field--email text-input" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
                       <svg class="user-contacts__image user-contacts__image--email" version="1.1" id="icomn-email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve" width="17" height="13">
                         <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
                       </svg>
@@ -113,7 +113,7 @@
                   <li class="user-contacts__item">
                     <label class="user-contacts__label user-contacts__label--phone" for="phone-field">
                       <span>Телефон:*</span>
-                      <input class="user-contacts__field user-contacts__field--phone" type="tel" name="phone" id="phone-field" placeholder="9 (960) 900-60-90">
+                      <input class="user-contacts__field user-contacts__field--phone text-input" type="tel" name="phone" id="phone-field" placeholder="9 (960) 900-60-90">
                       <svg class="user-contacts__image user-contacts__image--phone" version="1.1" id="icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve" width="20" height="20">
                         <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
                         <path
@@ -133,7 +133,7 @@
             <li class="diet__form-item diet__form-item--comment">
               <fieldset class="diet__comment comment">
                 <legend class="comment__title">Комментарий</legend>
-                <textarea class="comment__field" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="comment__field text-input" placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
             </li>
 
@@ -144,19 +144,19 @@
               <legend class="products__title">Дополнительно</legend>
                 <ul class="products__list">
                   <li class="products__item">
-                    <input class="visually-hidden" type="checkbox" name="sugar" id="sugar-field" checked>
+                    <input class="visually-hidden checkbox" type="checkbox" name="sugar" id="sugar-field" checked>
                     <label class="products__label" for="sugar-field">Сахорозаменитель</label>
                   </li>
                   <li class="products__item">
-                    <input class="visually-hidden" type="checkbox" name="water" id="water-field">
+                    <input class="visually-hidden checkbox" type="checkbox" name="water" id="water-field">
                     <label class="products__label" for="water-field">Питьевая вода</label>
                   </li>
                   <li class="products__item">
-                    <input class="visually-hidden" type="checkbox" name="milk" id="milk-field">
+                    <input class="visually-hidden checkbox" type="checkbox" name="milk" id="milk-field">
                     <label class="products__label" for="milk-field">Молоко</label>
                   </li>
                   <li class="products__item">
-                    <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins-field">
+                    <input class="visually-hidden checkbox" type="checkbox" name="vitamins" id="vitamins-field">
                     <label class="products__label" for="vitamins-field">Витамины</label>
                   </li>
                 </ul>
