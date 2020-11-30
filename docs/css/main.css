@@ -1,26 +1,34 @@
 @font-face {
   font-family: "PT Sans";
-  src: url(cf4d398dcc1328cf82de79fec02f1b4b.woff2) format("woff2"), url(2fe77da997b43010fec01b3840b058bf.woff) format("woff");
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2"),
+       url("../fonts/PTSans-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: "PT Sans";
-  src: url(a1be8d834c5ff6a36dbe7cea1608e0d1.woff2) format("woff2"), url(b4dbb3d5fbb6c727b4a9fd01b42f8e9e.woff) format("woff");
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Oswald";
-  src: url(86e8bc66853873c61bb2dbd950dc4ed2.woff2) format("woff2"), url(69fd0cc314e88bb5ef2670daf9734691.woff) format("woff");
+  src: url("../fonts/Oswald-Regular.woff2") format("woff2"),
+       url("../fonts/Oswald-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Oswald";
-  src: url(75d0c328a7778fb2fabacb46a5ef97c9.woff2) format("woff2"), url(d658479f39fe823cbb606b10510baa5a.woff) format("woff");
+  src: url("../fonts/Oswald-Medium.woff2") format("woff2"),
+       url("../fonts/Oswald-Medium.woff") format("woff");
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+}
 
 :root {
   --fs-body: 0.875rem;
@@ -255,7 +263,7 @@ ol {
     width: 50%;
     height: 700px;
     background-color: #64a83b;
-    background-image: url(60301e129747fdb1777b802cb718f303.jpg);
+    background-image: url(../img/index-background-desktop@1x.jpg);
     background-repeat: no-repeat;
     background-position: right; } }
 
@@ -294,7 +302,8 @@ ol {
   width: 24px;
   height: 2px;
   background-color: #222222;
-  box-shadow: 0 8px #222222, 0 16px #222222; }
+  box-shadow: 0 8px #222222,
+ 0 16px #222222; }
 
 .main-nav__button--close::before, .main-nav__button--close::after {
   top: 10px;
@@ -416,7 +425,7 @@ ol {
     width: 100%;
     height: 305px;
     background-color: #63a73a;
-    background-image: url(b921b85e351bcaa68d308fd69638a51c.jpg);
+    background-image: url(../img/index-background-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: center; }
   .intro-block__title {
@@ -508,13 +517,13 @@ ol {
     left: 20px;
     width: 50px;
     height: 50px;
-    background-image: url(c871ccee426e117fb73cf3777313eef1.svg); }
+    background-image: url(../img/programme-icon-slim.svg); }
   .programme__item--pro::after {
     top: 35px;
     left: 10px;
     width: 70px;
     height: 30px;
-    background-image: url(bb9323d16aa74eaf6d0b8391b1189953.svg); }
+    background-image: url(../img/programme-icon-pro.svg); }
   .programme__title {
     margin-bottom: 35px;
     padding-left: 70px;
@@ -664,13 +673,13 @@ ol {
     background-position: center;
     background-repeat: no-repeat; }
   .features__item--nutrients::before {
-    background-image: url(88f5c667e8dcd160a7e9c9d4c7b09563.png); }
+    background-image: url(../img/advantage-leaf@1x.png); }
   .features__item--powder::before {
-    background-image: url(211ba462c1dab8924a15c3571da9c497.png); }
+    background-image: url(../img/advantage-powder@1x.png); }
   .features__item--meal::before {
-    background-image: url(3ae928842f4c92d12e7107a556442e7b.png); }
+    background-image: url(../img/advantage-dining@1x.png); }
   .features__item--change::before {
-    background-image: url(06b4836b22b9ee5a3bbff3cab7003b0f.png); }
+    background-image: url(../img/advantage-clock@1x.png); }
   .features__text {
     font-family: "Arial", "PT Sans", sans-serif; }
 
@@ -1531,7 +1540,7 @@ ol {
   color: #fff;
   text-align: center;
   background-color: #68b738;
-  background-image: url(59e6c9afd66833bb19ef7e45c88abe40.jpg);
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -1541,7 +1550,7 @@ ol {
   display: block;
   width: 60px;
   height: 60px;
-  background-image: url(951fad17ee6703f4b59257ed47c85a73.svg);
+  background-image: url(../img/gift-icon.svg);
   background-position: center;
   background-repeat: no-repeat; }
 
@@ -1557,7 +1566,7 @@ ol {
     min-height: 200px;
     padding: 60px 90px;
     text-align: left;
-    background-image: url(30cf53561095429ea011aea9a83b0af0.jpg); }
+    background-image: url(../img/gift-photo-tablet@1x.jpg); }
   .promo__text {
     width: 30%;
     margin-top: 0;
@@ -1572,7 +1581,7 @@ ol {
       height: 100%;
       padding: 60px 40px 45px;
       text-align: center;
-      background-image: url(aa52f2a7aebd09aae22d119685e8246a.jpg); }
+      background-image: url(../img/gift-photo-desktop@1x.jpg); }
     .promo__text {
       width: auto;
       margin-top: 60px;
@@ -1937,4 +1946,3 @@ ol {
     margin-bottom: 0; } }
 
 
-/*# sourceMappingURL=main.css.map*/
