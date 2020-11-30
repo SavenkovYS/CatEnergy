@@ -78,7 +78,7 @@ const jsLoaders = () => {
 const plugins = () => {
   const base = [
     new HTMLWebpackPlugin({
-      template: './form.html',
+      template: './index.html',
       minify: {
         collapseWhitespace: isProd
       }
@@ -86,7 +86,7 @@ const plugins = () => {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, 'src'),
+        from: path.resolve(__dirname, 'docs'),
         to: path.resolve(__dirname, 'dist')
       }
     ]),
@@ -103,7 +103,7 @@ const plugins = () => {
 }
 
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, 'docs'),
   mode: 'development',
   entry: {
     main: ['@babel/polyfill', './index.js']
