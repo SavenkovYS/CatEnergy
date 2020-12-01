@@ -129,10 +129,6 @@ module.exports = {
         use: cssLoaders()
       },
       {
-        test: /\.less$/,
-        use: cssLoaders('less-loader')
-      },
-      {
         test: /\.s[ac]ss$/,
         use: cssLoaders('sass-loader')
       },
@@ -145,34 +141,10 @@ module.exports = {
         use: ['file-loader']
       },
       {
-        test: /\.xml$/,
-        use: ['xml-loader']
-      },
-      {
-        test: /\.csv$/,
-        use: ['csv-loader']
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: jsLoaders()
       },
-      {
-        test: /\.ts$/,
-        exclude: /node_modules/,
-        loader: {
-          loader: 'babel-loader',
-          options: babelOptions('@babel/preset-typescript')
-        }
-      },
-      {
-        test: /\.jsx$/,
-        exclude: /node_modules/,
-        loader: {
-          loader: 'babel-loader',
-          options: babelOptions('@babel/preset-react')
-        }
-      }
     ]
   }
 }
