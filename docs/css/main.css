@@ -92,7 +92,8 @@ img {
   text-transform: uppercase;
   text-align: center;
   background-color: #68b738;
-  border: none; }
+  border: none; 
+  transition: background-color 0.2s ease-in-out}
 
 .button--secondary {
   color: #444444;
@@ -119,7 +120,8 @@ img {
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  outline: 1px solid #e6e6e6; }
+  outline: 1px solid #e6e6e6;
+  transition: outline 0.1s ease-in-out; }
 
 .text-input:hover {
   outline: 1px solid #cdcdcd; }
@@ -137,7 +139,8 @@ img {
   width: 30px;
   height: 30px;
   box-sizing: border-box;
-  border: 1px solid #cdcdcd; }
+  border: 1px solid #cdcdcd;
+  transition: border 0.1s ease-in-out; }
 
 .checkbox:checked + label::after {
   content: "";
@@ -171,7 +174,8 @@ img {
   height: 30px;
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: border 0.1s ease-in-out; }
 
 .radio-button:checked + label::after {
   content: "";
@@ -364,7 +368,8 @@ ol {
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
-  line-height: 1; }
+  line-height: 1; 
+  transition: color 0.1s ease-in-out;}
 
 .site-list__link[href]:hover, .site-list__link[href]:focus {
   color: rgba(17, 17, 17, 0.6); }
@@ -543,6 +548,8 @@ ol {
     color: #111;
     text-transform: uppercase;
     text-decoration: none; }
+    .programme__link::before, .programme__link::after {
+    transition: all 0.3s ease-out; }
   .programme__link::before {
     content: '';
     position: absolute;
@@ -1151,7 +1158,8 @@ ol {
   display: flex; }
 
 .social__link svg path {
-  fill: #666666; }
+  fill: #666666;
+  transition: fill 0.2s ease-out; }
 
 .social__link:hover svg path {
   fill: #68b738; }
@@ -1179,6 +1187,9 @@ ol {
   align-items: center;
   text-decoration: none;
   color: #444444; }
+
+.copyright__link svg path {
+  transition: fill 0.1s ease-out; }
 
 .copyright__link:hover svg path {
   fill: #68b738; }
