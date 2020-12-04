@@ -78,7 +78,7 @@ const jsLoaders = () => {
 const plugins = () => {
   const base = [
     new HTMLWebpackPlugin({
-      template: './index.html',
+      template: './form.html',
       minify: {
         collapseWhitespace: isProd
       }

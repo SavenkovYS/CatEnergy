@@ -80,6 +80,7 @@ body {
 
   background-color: $clr-accent;
   border: none;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .button--secondary {
@@ -122,6 +123,7 @@ body {
   background-color: transparent;
   border: none;
   outline: 1px solid $br-clr-secondary;
+  transition: outline 0.1s ease-in-out;
 }
 
 // Состояния текстовых полей
@@ -141,6 +143,10 @@ body {
 
 // Чекбоксы
 
+.checkbox + label {
+  cursor: pointer;
+}
+
 .checkbox + label::before {
   content: "";
 
@@ -151,6 +157,7 @@ body {
   box-sizing: border-box;
 
   border: 1px solid $br-clr-primary;
+  transition: border 0.1s ease-in-out;
 }
 
 .checkbox:checked + label::after {
@@ -191,6 +198,10 @@ body {
 
 // Радиокнопки
 
+.radio-button + label {
+  cursor: pointer;
+}
+
 .radio-button + label::before {
   content: "";
 
@@ -202,6 +213,7 @@ body {
 
   border: 1px solid $br-clr-primary;
   border-radius: 50%;
+  transition: border 0.1s ease-in-out;
 }
 
 .radio-button:checked + label::after {

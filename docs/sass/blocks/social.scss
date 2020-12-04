@@ -18,6 +18,7 @@
 
     &__link svg path {
         fill: #666666;
+        transition: fill 0.2s ease-out;
     }
 
     &__link:hover svg path {

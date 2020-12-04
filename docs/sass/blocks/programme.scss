@@ -90,6 +90,11 @@
 
     // Стрелки 
 
+    &__link::before,
+    &__link::after {
+        transition: all 0.3s ease-out;
+    }
+
     &__link::before {
         content: '';
 
