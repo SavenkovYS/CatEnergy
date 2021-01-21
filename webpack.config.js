@@ -112,9 +112,6 @@ module.exports = {
     filename: filename('js'),
     path: path.resolve(__dirname, 'dist')
   },
-  resolve: {
-    extensions: ['.js', '.json', '.png'],
-  },
   optimization: optimization(),
   devServer: {
     port: 4200,
@@ -134,10 +131,6 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|svg|gif)$/,
-        use: ['file-loader']
-      },
-      {
-        test: /\.(ttf|woff|woff2|eot)$/,
         use: ['file-loader']
       },
       {
