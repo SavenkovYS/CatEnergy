@@ -78,6 +78,21 @@ const jsLoaders = () => {
 const plugins = () => {
   const base = [
     new HTMLWebpackPlugin({
+      filename: 'index.html',
+      template: './index.html',
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'catalogue.html',
+      template: './catalogue.html',
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'form.html',
       template: './form.html',
       minify: {
         collapseWhitespace: isProd
@@ -86,8 +101,8 @@ const plugins = () => {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, 'docs'),
-        to: path.resolve(__dirname, 'dist')
+        from: path.resolve(__dirname, 'src/img'),
+        to: path.resolve(__dirname, 'dist/img')
       }
     ]),
     new MiniCssExtractPlugin({
@@ -103,7 +118,7 @@ const plugins = () => {
 }
 
 module.exports = {
-  context: path.resolve(__dirname, 'docs'),
+  context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
     main: ['@babel/polyfill', './index.js']
@@ -134,10 +149,14 @@ module.exports = {
         use: ['file-loader']
       },
       {
+        test: /\.(ttf|woff|woff2|eot)$/,
+        use: ['file-loader']
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: jsLoaders()
-      },
+      }
     ]
   }
 }
